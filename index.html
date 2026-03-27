@@ -18,11 +18,11 @@
     --accent: #4c7ec9;
     --line: rgba(201,168,76,0.2);
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
@@ -31,7 +31,7 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
+ 
   /* ── NOISE OVERLAY ── */
   body::before {
     content: '';
@@ -42,7 +42,7 @@
     pointer-events: none;
     z-index: 9999;
   }
-
+ 
   /* ── HERO ── */
   .hero {
     position: relative;
@@ -51,7 +51,7 @@
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
   }
-
+ 
   .hero::after {
     content: '';
     position: absolute;
@@ -60,7 +60,7 @@
     background: linear-gradient(135deg, #1a1d24, #0d0f14);
     z-index: 0;
   }
-
+ 
   .hero-left {
     position: relative;
     z-index: 2;
@@ -70,7 +70,7 @@
     padding: 80px 60px 80px 80px;
     background: var(--bg);
   }
-
+ 
   .hero-left::before {
     content: '';
     position: absolute;
@@ -78,7 +78,7 @@
     background: radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.06) 0%, transparent 70%);
     pointer-events: none;
   }
-
+ 
   .tag {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
@@ -98,7 +98,7 @@
     height: 1px;
     background: var(--gold);
   }
-
+ 
   h1.name {
     font-family: 'Playfair Display', serif;
     font-size: clamp(3rem, 6vw, 5.5rem);
@@ -108,12 +108,12 @@
     color: var(--text);
     animation: fadeUp 0.8s 0.1s ease both;
   }
-
+ 
   h1.name em {
     font-style: italic;
     color: var(--gold);
   }
-
+ 
   .hero-title {
     font-family: 'DM Mono', monospace;
     font-size: 0.75rem;
@@ -123,7 +123,7 @@
     margin-top: 20px;
     animation: fadeUp 0.8s 0.2s ease both;
   }
-
+ 
   .hero-summary {
     margin-top: 32px;
     font-size: 1rem;
@@ -132,7 +132,7 @@
     line-height: 1.8;
     animation: fadeUp 0.8s 0.3s ease both;
   }
-
+ 
   .contact-row {
     margin-top: 44px;
     display: flex;
@@ -140,7 +140,7 @@
     gap: 10px;
     animation: fadeUp 0.8s 0.4s ease both;
   }
-
+ 
   .contact-item {
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@
     font-size: 0.85rem;
     color: var(--text-dim);
   }
-
+ 
   .contact-icon {
     width: 32px;
     height: 32px;
@@ -161,7 +161,7 @@
     color: var(--gold);
     font-size: 0.8rem;
   }
-
+ 
   .hero-right {
     position: relative;
     z-index: 2;
@@ -170,12 +170,12 @@
     justify-content: center;
     padding: 60px 80px 60px 40px;
   }
-
+ 
   .photo-frame {
     position: relative;
     animation: fadeUp 0.8s 0.2s ease both;
   }
-
+ 
   .photo-frame::before {
     content: '';
     position: absolute;
@@ -185,7 +185,7 @@
     border-radius: 4px;
     z-index: -1;
   }
-
+ 
   .photo-frame::after {
     content: '';
     position: absolute;
@@ -195,7 +195,7 @@
     border-radius: 4px;
     z-index: -2;
   }
-
+ 
   .photo-frame img {
     width: 320px;
     height: 420px;
@@ -205,7 +205,7 @@
     display: block;
     filter: grayscale(20%) contrast(1.05);
   }
-
+ 
   .hero-corner {
     position: absolute;
     bottom: 40px;
@@ -218,7 +218,7 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
   }
-
+ 
   /* ── SCROLL INDICATOR ── */
   .scroll-hint {
     position: absolute;
@@ -234,35 +234,35 @@
     text-transform: uppercase;
     animation: fadeUp 1s 0.8s ease both;
   }
-
+ 
   .scroll-line {
     width: 1px;
     height: 40px;
     background: linear-gradient(to bottom, var(--gold), transparent);
     animation: scrollPulse 2s infinite;
   }
-
+ 
   /* ── SECTIONS ── */
   section {
     padding: 100px 80px;
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   .section-header {
     display: flex;
     align-items: center;
     gap: 24px;
     margin-bottom: 60px;
   }
-
+ 
   .section-num {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
     color: var(--gold);
     letter-spacing: 0.15em;
   }
-
+ 
   .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.4rem;
@@ -270,13 +270,13 @@
     color: var(--text);
     letter-spacing: -0.01em;
   }
-
+ 
   .section-line {
     flex: 1;
     height: 1px;
     background: var(--line);
   }
-
+ 
   /* ── DIVIDER ── */
   .divider {
     border: none;
@@ -285,14 +285,14 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   /* ── EXPERIENCE ── */
   .experience-grid {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-
+ 
   .exp-card {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -303,20 +303,20 @@
     transform: translateY(0);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
-
+ 
   .exp-card.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
+ 
   .exp-card:last-child {
     border-bottom: none;
   }
-
+ 
   .exp-meta {
     padding-top: 4px;
   }
-
+ 
   .exp-period {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
@@ -325,14 +325,14 @@
     text-transform: uppercase;
     margin-bottom: 8px;
   }
-
+ 
   .exp-company {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     color: var(--text);
     font-weight: 700;
   }
-
+ 
   .exp-country {
     font-size: 0.75rem;
     color: var(--text-dim);
@@ -341,9 +341,9 @@
     align-items: center;
     gap: 6px;
   }
-
+ 
   .exp-content {}
-
+ 
   .exp-role {
     font-size: 1rem;
     font-weight: 500;
@@ -351,20 +351,20 @@
     margin-bottom: 16px;
     letter-spacing: 0.02em;
   }
-
+ 
   .exp-desc {
     font-size: 0.9rem;
     color: var(--text-dim);
     line-height: 1.85;
   }
-
+ 
   .exp-tags {
     margin-top: 18px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
   }
-
+ 
   .exp-tag {
     font-family: 'DM Mono', monospace;
     font-size: 0.65rem;
@@ -376,7 +376,7 @@
     border-radius: 2px;
     text-transform: uppercase;
   }
-
+ 
   /* ── SKILLS / TOOLS ── */
   .skills-section {
     background: var(--surface);
@@ -387,7 +387,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .skills-section::before {
     content: '';
     position: absolute;
@@ -396,14 +396,14 @@
     background: radial-gradient(circle, rgba(201,168,76,0.06), transparent 70%);
     pointer-events: none;
   }
-
+ 
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 12px;
     margin-top: 48px;
   }
-
+ 
   .skill-chip {
     background: var(--surface2);
     border: 1px solid var(--line);
@@ -421,25 +421,25 @@
     transform: scale(1);
     transition: opacity 0.4s ease, transform 0.4s ease, border-color 0.2s, color 0.2s;
   }
-
+ 
   .skill-chip.visible {
     opacity: 1;
     transform: scale(1);
   }
-
+ 
   .skill-chip:hover {
     border-color: var(--gold);
     color: var(--gold);
     background: var(--gold-dim);
   }
-
+ 
   /* ── EDUCATION / CERTS ── */
   .edu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
-
+ 
   .edu-card {
     background: var(--surface);
     border: 1px solid var(--line);
@@ -451,12 +451,12 @@
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
-
+ 
   .edu-card.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
+ 
   .edu-card::before {
     content: '';
     position: absolute;
@@ -464,7 +464,7 @@
     width: 3px; height: 100%;
     background: var(--gold);
   }
-
+ 
   .edu-label {
     font-family: 'DM Mono', monospace;
     font-size: 0.6rem;
@@ -473,7 +473,7 @@
     text-transform: uppercase;
     margin-bottom: 16px;
   }
-
+ 
   .edu-degree {
     font-family: 'Playfair Display', serif;
     font-size: 1.15rem;
@@ -482,20 +482,20 @@
     line-height: 1.3;
     margin-bottom: 8px;
   }
-
+ 
   .edu-institution {
     font-size: 0.85rem;
     color: var(--text-dim);
     margin-bottom: 20px;
   }
-
+ 
   .edu-subjects {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
-
+ 
   .edu-subjects li {
     font-size: 0.8rem;
     color: var(--text-dim);
@@ -503,7 +503,7 @@
     align-items: center;
     gap: 10px;
   }
-
+ 
   .edu-subjects li::before {
     content: '';
     display: block;
@@ -513,7 +513,7 @@
     border-radius: 50%;
     flex-shrink: 0;
   }
-
+ 
   .cert-card {
     background: var(--surface);
     border: 1px solid var(--line);
@@ -524,19 +524,19 @@
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
-
+ 
   .cert-card.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
+ 
   .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 12px;
     margin-top: 20px;
   }
-
+ 
   .cert-item {
     display: flex;
     align-items: flex-start;
@@ -548,7 +548,7 @@
     color: var(--text-dim);
     line-height: 1.4;
   }
-
+ 
   .cert-dot {
     width: 6px;
     height: 6px;
@@ -557,7 +557,7 @@
     flex-shrink: 0;
     margin-top: 5px;
   }
-
+ 
   /* ── FOOTER ── */
   footer {
     background: var(--surface);
@@ -567,14 +567,14 @@
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   .footer-name {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text);
   }
-
+ 
   .footer-contact {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
@@ -583,23 +583,23 @@
     text-align: right;
     line-height: 2;
   }
-
+ 
   .footer-contact a {
     color: var(--gold);
     text-decoration: none;
   }
-
+ 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   @keyframes scrollPulse {
     0%, 100% { opacity: 0.3; transform: scaleY(1); }
     50% { opacity: 1; transform: scaleY(1.3); }
   }
-
+ 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .hero {
@@ -621,23 +621,23 @@
     .footer-contact { text-align: center; }
     .skills-section { padding: 60px 40px; }
   }
-
+ 
   /* Staggered entry animations */
   @keyframes slideUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   @keyframes popIn {
     from { opacity: 0; transform: scale(0.92); }
     to   { opacity: 1; transform: scale(1); }
   }
-
+ 
   .exp-card { animation: slideUp 0.55s ease both; }
   .exp-card:nth-child(1) { animation-delay: 0.05s; }
   .exp-card:nth-child(2) { animation-delay: 0.15s; }
   .exp-card:nth-child(3) { animation-delay: 0.25s; }
-
+ 
   .skill-chip { animation: popIn 0.4s ease both; }
   .skill-chip:nth-child(1)  { animation-delay: 0.02s; }
   .skill-chip:nth-child(2)  { animation-delay: 0.04s; }
@@ -663,16 +663,58 @@
   .skill-chip:nth-child(22) { animation-delay: 0.44s; }
   .skill-chip:nth-child(23) { animation-delay: 0.46s; }
   .skill-chip:nth-child(24) { animation-delay: 0.48s; }
-
+ 
   .edu-card { animation: slideUp 0.55s ease both; }
   .edu-card:nth-child(1) { animation-delay: 0.05s; }
   .edu-card:nth-child(2) { animation-delay: 0.15s; }
   .cert-card { animation: slideUp 0.55s 0.25s ease both; }
-
+ 
+ 
+  .exp-responsibilities {
+    margin-top: 20px;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+ 
+  .exp-responsibilities-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+ 
+  .exp-responsibilities ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+ 
+  .exp-responsibilities ul li {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.4;
+  }
+ 
+  .exp-responsibilities ul li::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+ 
 </style>
 </head>
 <body>
-
+ 
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <header class="hero">
   <div class="hero-left">
@@ -686,7 +728,7 @@
     <div class="contact-row">
       <div class="contact-item">
         <div class="contact-icon">✉</div>
-        <span>coetzeea001@gmail.com</span>
+        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab9b5bfaea0bfbfbbeaeaeb9abdb7bbb3b6f4b9b5b7">[email&#160;protected]</a></span>
       </div>
       <div class="contact-item">
         <div class="contact-icon">✆</div>
@@ -702,7 +744,7 @@
       </div>
     </div>
   </div>
-
+ 
   <div class="hero-right">
     <div class="photo-frame">
       <!-- Placeholder for photo — replace src with actual image path if hosting -->
@@ -710,13 +752,13 @@
     </div>
     <div class="hero-corner">Pretoria · ZA</div>
   </div>
-
+ 
   <div class="scroll-hint">
     <div class="scroll-line"></div>
     scroll
   </div>
 </header>
-
+ 
 <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
 <section>
   <div class="section-header">
@@ -724,9 +766,9 @@
     <h2 class="section-title">Experience</h2>
     <div class="section-line"></div>
   </div>
-
+ 
   <div class="experience-grid">
-
+ 
     <div class="exp-card">
       <div class="exp-meta">
         <div class="exp-period">2025 – Current</div>
@@ -754,9 +796,19 @@
           <span class="exp-tag">Webhooks</span>
           <span class="exp-tag">JavaScript</span>
         </div>
+        <div class="exp-responsibilities">
+          <div class="exp-responsibilities-title">Key Responsibilities</div>
+          <ul>
+            <li>Automation Development &amp; Deployment</li>
+            <li>System Support &amp; Troubleshooting</li>
+            <li>Workflow Optimization</li>
+            <li>System Monitoring &amp; Maintenance</li>
+            <li>Integration &amp; Documentation</li>
+          </ul>
+        </div>
       </div>
     </div>
-
+ 
     <div class="exp-card">
       <div class="exp-meta">
         <div class="exp-period">2020 – 2025</div>
@@ -779,9 +831,19 @@
           <span class="exp-tag">Team Lead</span>
           <span class="exp-tag">Zoom</span>
         </div>
+        <div class="exp-responsibilities">
+          <div class="exp-responsibilities-title">Key Responsibilities</div>
+          <ul>
+            <li>Advanced Troubleshooting</li>
+            <li>Ticket Escalation Management</li>
+            <li>Infrastructure &amp; Network Support</li>
+            <li>System Maintenance</li>
+            <li>Customer Communication</li>
+          </ul>
+        </div>
       </div>
     </div>
-
+ 
     <div class="exp-card">
       <div class="exp-meta">
         <div class="exp-period">2016 – 2019</div>
@@ -804,14 +866,24 @@
           <span class="exp-tag">FTK Imager</span>
           <span class="exp-tag">Forensics</span>
         </div>
+        <div class="exp-responsibilities">
+          <div class="exp-responsibilities-title">Key Responsibilities</div>
+          <ul>
+            <li>Evidence Handling &amp; Chain of Custody</li>
+            <li>Technical Laboratory Support</li>
+            <li>Database &amp; Case Management</li>
+            <li>Quality &amp; Safety Compliance</li>
+            <li>Administrative Support</li>
+          </ul>
+        </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <hr class="divider">
-
+ 
 <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
 <div class="skills-section">
   <div style="max-width:1200px;margin:0 auto;">
@@ -848,7 +920,7 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
 <section>
   <div class="section-header">
@@ -856,9 +928,9 @@
     <h2 class="section-title">Education</h2>
     <div class="section-line"></div>
   </div>
-
+ 
   <div class="edu-grid">
-
+ 
     <div class="edu-card">
       <div class="edu-label">Diploma · IT</div>
       <div class="edu-degree">Diploma in IT Network Management</div>
@@ -874,7 +946,7 @@
         <li>Advanced IT Management</li>
       </ul>
     </div>
-
+ 
     <div class="edu-card">
       <div class="edu-label">High School · Grade 12</div>
       <div class="edu-degree">National Senior Certificate</div>
@@ -889,7 +961,7 @@
         <li>Life Orientation</li>
       </ul>
     </div>
-
+ 
     <div class="cert-card">
       <div class="edu-label">Certifications &amp; Additional Training</div>
       <div class="cert-grid">
@@ -905,10 +977,10 @@
         <div class="cert-item"><div class="cert-dot"></div>Practical Classroom Training (20 hrs)</div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
 <footer>
   <div>
@@ -918,23 +990,12 @@
     </div>
   </div>
   <div class="footer-contact">
-    <a href="mailto:coetzeea001@gmail.com">coetzeea001@gmail.com</a><br>
+    <a href="/cdn-cgi/l/email-protection#01626e64757b64646031313041666c60686d2f626e6c"><span class="__cf_email__" data-cfemail="8fece0eafbf5eaeaeebfbfbecfe8e2eee6e3a1ece0e2">[email&#160;protected]</span></a><br>
     064 907 7976 &nbsp;·&nbsp; 062 558 5002<br>
     English &amp; Afrikaans
   </div>
 </footer>
-
-<script>
+ 
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll-triggered reveals
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const delay = el.dataset.delay || 0;
-        setTimeout(() => el.classList.add('visible'), delay);
-        observer.unobserve(el);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.exp-card').forEach
+  const observer = ne
